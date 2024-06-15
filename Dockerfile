@@ -4,7 +4,7 @@ FROM alpine:latest
 # Install necessary packages: tailscale, openrc, and bash
 RUN apk update && \
     apk add --no-cache tailscale openrc bash && \
-    rc-update add tailscaled default
+    rc-update add tailscale default
 
 # Create the entrypoint script
 COPY entrypoint.sh /entrypoint.sh
