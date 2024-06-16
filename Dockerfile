@@ -4,7 +4,7 @@ FROM alpine:latest
 # Install necessary packages: tailscale, openrc, and bash in a single layer
 RUN apk update &&\
     apk add --no-cache tailscale openrc bash && \
- #   rc-update add tailscale default 
+#   rc-update add tailscale default 
 
 
 # Copy the entrypoint script and set permissions in one layer
